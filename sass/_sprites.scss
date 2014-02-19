@@ -46,7 +46,7 @@ $icon-layout: smart;
 .second-menu a:before{
 	@include icon-sprite(grey-dot);
 }
-.second-menu a:hover::before, .second-menu a.active:before{
+.second-menu a:hover:before, .second-menu a.active:before{
 	@include icon-sprite(red-dot);
 }
 
@@ -81,7 +81,7 @@ input[type=checkbox]{
 		@include icon-sprite(check)
 	}
 
-	&:checked + label:before{
+	&:checked + label:before, &.current + label:before{
 		@include icon-sprite(checked)
 	}
 }
@@ -91,7 +91,7 @@ input[type=radio]{
 		@include icon-sprite(radio)
 	}
 
-	&:checked + label:before{
+	&:checked + label:before, &.current + label:before{
 		@include icon-sprite(radio-c)
 	}
 }

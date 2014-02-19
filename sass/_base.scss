@@ -9,6 +9,7 @@ html{
 body{
 	@include font-size(12);
 	@include line-height(24);
+	font-family: Verdana, Helvetica, sans-serif;
 	@extend .light;
 	background: #f2f2f2;
 }

@@ -1,0 +1,94 @@
+/* line 1, ../sass/ie-8.scss */
+.icon-sprite, .icon-arr-down, .icon-arrow-down, .icon-arrow-left {
+  background: url("../img/icon-sf014b86c11.png") no-repeat;
+}
+
+/* line 4, ../sass/ie-8.scss */
+.icon-arrow-right, .icon-arrow-up, .icon-bag-r, .icon-bag, .icon-car {
+  background: url("../img/icon-sf014b86c11.png") no-repeat;
+}
+
+/* line 7, ../sass/ie-8.scss */
+.icon-check, .icon-checked, .icon-clock-r, .icon-close-p, .icon-com {
+  background: url("../img/icon-sf014b86c11.png") no-repeat;
+}
+
+/* line 10, ../sass/ie-8.scss */
+.icon-del, .icon-exit, .icon-facebook, .icon-gplus, .icon-grey-dot, .icon-heart-full {
+  background: url("../img/icon-sf014b86c11.png") no-repeat;
+}
+
+/* line 13, ../sass/ie-8.scss */
+.icon-heart-w, .icon-key-w, .icon-left-h, .icon-left, .icon-man, .icon-mobile, .icon-pen-w {
+  background: url("../img/icon-sf014b86c11.png") no-repeat;
+}
+
+/* line 16, ../sass/ie-8.scss */
+.icon-pinterest, .icon-print, .icon-radio-c, .icon-radio, .icon-red-dot, .icon-right-h {
+  background: url("../img/icon-sf014b86c11.png") no-repeat;
+}
+
+/* line 19, ../sass/ie-8.scss */
+.icon-right, .icon-s-1, .icon-s-2, .icon-s-3, .icon-s-4, .icon-s-5, .icon-s-6 {
+  background: url("../img/icon-sf014b86c11.png") no-repeat;
+}
+
+/* line 22, ../sass/ie-8.scss */
+.icon-scroll-up, .icon-search-w, .icon-search, .icon-trash, .icon-triangle-red {
+  background: url("../img/icon-sf014b86c11.png") no-repeat;
+}
+
+/* line 25, ../sass/ie-8.scss */
+.icon-twitter {
+  background: url("../img/icon-sf014b86c11.png") no-repeat;
+}
+
+/* line 28, ../sass/ie-8.scss */
+.register-link:before, .enter-link:before, .exit-link:before, .man-link:before, .like-link:before {
+  background: url("../img/icon-sf014b86c11.png") no-repeat;
+}
+
+/* line 31, ../sass/ie-8.scss */
+.time-block:before, .phone-block:before, .count, .search:after, .search.focus:after, .second-menu a:before {
+  background: url("../img/icon-sf014b86c11.png") no-repeat;
+}
+
+/* line 35, ../sass/ie-8.scss */
+.second-menu a:hover:before, .second-menu a.active:before, h2.red-arrow span:after, .thumb .flex-prev {
+  background: url("../img/icon-sf014b86c11.png") no-repeat;
+}
+
+/* line 38, ../sass/ie-8.scss */
+.thumb .flex-next, .twitter, .pinterest, .facebook, .gplus, input[type=checkbox] + label:before {
+  background: url("../img/icon-sf014b86c11.png") no-repeat;
+}
+
+/* line 41, ../sass/ie-8.scss */
+input[type=checkbox]:checked + label:before, input[type=radio] + label:before, input[type=radio]:checked + label:before {
+  background: url("../img/icon-sf014b86c11.png") no-repeat;
+}
+
+/* line 44, ../sass/ie-8.scss */
+.chosen-container-single .chosen-single div, .del, .print-link:before, .personal-thumbs .flex-prev {
+  background: url("../img/icon-sf014b86c11.png") no-repeat;
+}
+
+/* line 47, ../sass/ie-8.scss */
+.personal-thumbs .flex-next, .delivery-link:before, .color-slide .flex-prev, .color-slide .flex-prev:hover {
+  background: url("../img/icon-sf014b86c11.png") no-repeat;
+}
+
+/* line 50, ../sass/ie-8.scss */
+.color-slide .flex-next, .color-slide .flex-next:hover, .answer:before {
+  background: url("../img/icon-sf014b86c11.png") no-repeat;
+}
+
+/* line 55, ../sass/ie-8.scss */
+.catalog-part .product-list {
+  width: 830px;
+}
+
+/* line 61, ../sass/ie-8.scss */
+.lt-ie9 nav#navigation .search input[type=text] {
+  padding-top: 10px;
+}

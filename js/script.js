@@ -1,7 +1,22 @@
 jQuery(document).ready(function(){
 
-	//big bunner on inpex page
 
+	$('input[placeholder], textarea[placeholder]').placeholder();
+	
+	
+	if($('html').hasClass('lt-ie9')){
+		$('input[type=checkbox] + label, input[type=radio] + label').on('click', function(){
+			if(!($(this).prev().hasClass('current'))){
+				$(this).prev().addClass('current');
+			}
+			else{
+				$(this).prev().removeClass('current');
+			}
+		});
+	}
+	
+	//big bunner on inpex page
+	 
 	$('.js-slider').flexslider({
 		directionNav: false,
     	useCSS: false
