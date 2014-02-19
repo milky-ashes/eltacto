@@ -1,0 +1,201 @@
+.aside-nav{
+	a{
+		display: block;
+		padding: 15px 20px 14px;
+		text:{
+			decoration: none;
+			transform: uppercase;
+		}
+		@extend .bold;
+		color: #000000;
+		border-top: 1px solid #eeeeee;
+		@include line-height(16);
+
+		&:last-child{
+			border-bottom: 1px solid #eeeeee;
+		}
+
+		&.active{
+			background: #f00000;
+			color: #fff;
+			border: 0;
+		}
+	}
+}
+
+.order-table{
+	@extend .regular;
+	margin-bottom: 30px;
+
+	.thead{
+		background: #f2f2f2;
+		color: #000000;
+		@include clearfix();
+		height: 40px;
+		line-height: 40px;
+		@extend .bold;
+
+		.product{
+			padding-left: 20px;
+		}
+	}
+
+	.product{
+		float: left;
+		width: 280px;
+	}
+
+	.sale{
+		width: 84px;
+		float: left;
+	}
+
+	.price{
+		width: 102px;
+		float: left;
+	}
+
+	.colvo{
+		width: 100px;
+		float: left;
+	}
+
+	.summ{
+		float: right;
+		width: 184px;
+	}
+
+	.tpart{
+		padding: 20px 0;
+		border-bottom: 1px solid #eeeeee;
+		@include clearfix();
+		position: relative;
+
+		.product{
+			padding-right: 50px;
+			img{
+				display: block;
+				border: 2px solid #eeeeee;
+				float: left;
+				margin-right: 10px;
+			}
+			a{
+				display: table-cell;
+				height: 100px;
+				vertical-align: middle;
+				color: #000000;
+				@include line-height(16);
+			}
+		}
+
+		.colvo{
+			input{
+				width: 34px;
+			}
+		}
+
+		.summ{
+			a{
+				display: inline-block;
+
+				&.like{
+					margin-left: 20px;
+				}
+
+				&.trash{
+					position: absolute;
+					top: 10px;
+					right: 0;
+				}
+
+				&.bag{
+					margin-left: 20px;
+					position: relative;
+					top: 2px;
+				}
+			}
+		}
+	}
+
+	.summary-part{
+		border-bottom: 2px dotted #eeeeee;
+		height: 95px;
+		line-height: 93px;
+		@include font-size(20);
+		@extend .bold;
+		@include clearfix();
+
+		p{
+			float:left;
+
+			&.right-block{
+				float: right;
+			}
+		}
+
+		span{
+			color: #f00000;
+		}
+
+		.button{
+			float: right;
+			margin-top: 20px;
+		}
+	}
+}
+
+.half-col{
+	width: 364px;
+	float: left;
+
+	&:last-child{
+		float: right;
+	}
+}
+
+.order-form{
+	@extend .regular;
+
+	.form-part{
+		padding-bottom: 10px;
+	}
+
+	.block-list li{
+		padding-bottom: 0;
+		margin-bottom: -3px;
+	}
+
+	fieldset{
+		padding-bottom: 30px;
+		border-bottom: 2px dotted #e5e5e5;
+	}
+
+	.button-block{
+		padding-top: 20px;
+		@include clearfix();
+
+		a{
+			color: #000000;
+			text-transform: uppercase;
+			line-height: 53px;
+			@extend .bold;
+			@include font-size(14);
+		}
+
+		.button{
+			float: right;
+			padding: 0 65px;
+			color: #ffffff;
+
+		}
+	}
+}
+
+.extra-link{
+	text-align: right;
+	padding-top: 15px;
+	a{
+		margin-left: 20px;
+		color: #000000;
+	}
+}

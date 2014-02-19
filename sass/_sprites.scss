@@ -1,0 +1,143 @@
+$icon-sprite-dimensions: true;
+$icon-layout: smart;
+@import "icon/*.png";
+@include all-icon-sprites;
+
+.register-link:before{
+	@include icon-sprite(pen-w);
+}
+
+.enter-link:before{
+	@include icon-sprite(key-w);
+}
+
+.like-link:before{
+	@include icon-sprite(heart-w);
+}
+
+.time-block:before{
+	@include icon-sprite(clock-r);
+}
+
+.phone-block:before{
+	@include icon-sprite(mobile);
+}
+
+.count{
+	@include icon-sprite(bag-r);
+}
+
+.search:after{
+	@include icon-sprite(search-w);
+}
+
+.search.focus:after{
+	@include icon-sprite(search);
+}
+
+.second-menu a:before{
+	@include icon-sprite(grey-dot);
+}
+.second-menu a:hover::before, .second-menu a.active:before{
+	@include icon-sprite(red-dot);
+}
+
+h2.red-arrow span:after{
+	@include icon-sprite(triangle-red);
+}
+
+.thumb{
+	.flex-prev{
+		@include icon-sprite(arrow-left);
+	}
+	.flex-next{
+		@include icon-sprite(arrow-right);
+	}
+}
+
+.twitter{
+	@include icon-sprite(twitter);
+}
+.pinterest{
+	@include icon-sprite(pinterest);
+}
+.facebook{
+	@include icon-sprite(facebook);
+}
+.gplus{
+	@include icon-sprite(gplus);
+}
+
+input[type=checkbox]{
+	+ label:before{
+		@include icon-sprite(check)
+	}
+
+	&:checked + label:before{
+		@include icon-sprite(checked)
+	}
+}
+
+input[type=radio]{
+	+ label:before{
+		@include icon-sprite(radio)
+	}
+
+	&:checked + label:before{
+		@include icon-sprite(radio-c)
+	}
+}
+
+
+.chosen-container-single .chosen-single div {
+	@include icon-sprite(arr-down)
+}
+
+.del{
+	@include icon-sprite(del);
+	display: inline-block;
+	position: relative;
+	top: 2px;
+	margin-left: 2px;
+}
+
+.print-link:before{
+	@include icon-sprite(print);
+}
+.like-link:before{
+	@include icon-sprite(heart-w);
+}
+
+.personal-thumbs{
+	.flex-prev{
+		@include icon-sprite(arrow-up);
+	}
+	.flex-next{
+		@include icon-sprite(arrow-down);
+	}
+}
+
+.delivery-link:before{
+	@include icon-sprite(car);
+}
+
+.color-slide{
+	.flex-prev{
+		@include icon-sprite(left);
+
+		&:hover{
+			@include icon-sprite(left-h);
+		}
+	}
+	.flex-next{
+		@include icon-sprite(right);
+
+		&:hover{
+			@include icon-sprite(right-h);
+		}
+	}
+}
+
+.answer:before{
+	@include icon-sprite(com);
+}

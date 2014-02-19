@@ -1,0 +1,94 @@
+table{
+	width: 100%;
+
+	td{
+		&:first-child{
+			padding-left: 17px;
+		}
+	}
+
+	thead{
+		td{
+			vertical-align: middle;
+			@extend .bold;
+			color: #000;
+			@include font-size(12);
+			height: 40px;
+			background: #ededed;
+
+			.number{
+				display: block;
+				width: 115px;
+				padding-left: 17px;
+			}
+			.date{
+				width: 123px;
+				display: block;
+			}
+			.summ{
+				width: 120px;
+				display: block;
+			}
+			.status{
+				display: block;
+				width: 120px;
+			}
+			.pay{
+				display: block;
+				width: 95px;
+			}
+		}
+	}
+
+	tbody{
+		td{
+			padding: 15px 0 12px;
+			border-bottom: 1px solid #ededed;
+			line-height: 1.2em;
+			@extend .regular;
+			vertical-align: top;
+
+			.number{
+				padding-left: 17px;
+				display: block;
+			}
+
+			.date{
+				margin-top: -3px;
+				display: block;
+			}
+			.product{
+				display: block;
+				width: 235px;
+				padding-right: 20px;
+
+				a{
+					display: block;
+					color: #000000;
+				}
+			}
+
+			.more-link{
+				width: 135px;
+				display: block;
+				text-decoration: none;
+				background: #ededed;
+				height: 22px;
+				@include border-radius(11px);
+				line-height: 24px;
+				color: #000;
+
+				&:hover{
+					text-decoration: underline;
+				}
+			}
+
+			.trash{
+				display: inline-block;
+				float: right;
+				margin-left: 40px;
+				margin-top: 4px;
+			}
+		}
+	}
+}

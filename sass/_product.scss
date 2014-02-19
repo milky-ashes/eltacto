@@ -1,0 +1,432 @@
+.personal-gallery{
+	width: 685px;
+	float: left;
+	margin-bottom: 50px;
+
+	.personal-thumbs{
+		width: 89px;
+		float: left;
+		height: 485px;
+		position: relative;
+
+		.slides{
+			//width: 89px!important;
+
+			li{
+				float: none!important;
+
+				img{
+					display: block;
+					border: 2px solid #eeeeee;
+					margin-bottom: 10px;
+				}
+
+				&:hover, &.flex-active-slide{
+					img{
+						border-color: #f00000;
+					}
+				}
+
+
+			}
+		}
+		.flex-viewport { 
+			height: 485px !important;
+			position: relative;
+		}
+
+		.flex-direction-nav{
+			height: 485px;
+			position: absolute;
+			width: 89px;
+			top: 0;
+
+			li{
+				display: block;
+				height: 50%;
+
+				a{
+					position: absolute;
+					left: 50%;
+					margin-left: -20px;
+					text-indent: -9999px;
+
+					&.flex-prev{
+						top: -17px;
+					}
+
+					&.flex-next{
+						bottom: -17px;
+					}
+				}
+			}
+		}
+	}
+
+	.personal-slider{
+		float: right;
+		width: 575px;
+
+		.slides{
+			li{
+				img{
+					display: block;
+					border: 2px solid #eeeeee;
+				}
+			}
+		}
+	}
+
+}
+
+.personal-product{
+	float: right;
+	width: 296px;
+	margin-left: -1px;
+	background: #eeeeee;
+	height: 484px;
+	border: 2px solid #eeeeee;
+
+	.logo-part{
+		background: #ffffff;
+		text-align: center;
+		a{
+			display: table-cell;
+			height: 50px;
+			vertical-align: middle;
+			width: 294px;
+
+			img{
+				margin-bottom: -7px;
+			}
+		}
+	}
+
+	.product-part{
+		margin: 0 30px;
+		border-bottom: 2px dotted #dbdbdb;
+		padding: 10px 0;
+		text-align: center;
+
+		a{
+			color: #000000;
+
+			&.button{
+				color: #ffffff;
+			}
+		}
+
+		&.last{
+			border-bottom: 0;
+		}
+
+		.button{
+			width: 100%;
+			@include font-size(18);
+			@extend .bold;
+			letter-spacing: -1px;
+			text-align: center;
+			padding: 0;
+			margin-bottom: 18px;
+			height: 40px;
+			line-height: 44px;
+		}
+
+		.social-block{
+			a{
+				display: inline-block;
+			}
+		}
+
+		.price{
+			display: block;
+			@include font-size(20);
+
+			&.new-price{
+				@extend .bold;
+				color: #f00000;
+			}
+
+			&.old-price{
+				@extend .regular;
+				color: #a6a6a6;
+				text-decoration: line-through;
+			}
+		}
+		.delivery-link{
+			color: #141313;
+			padding-left: 33px;
+			position: relative;
+			@extend .regular;
+
+			&:before{
+				display: block;
+				position: absolute;
+				content: "";
+				left: 0;
+				top: -2px;
+			}
+		}
+
+		.size-list{
+			text-align: center;
+			margin-top: -8px;
+			li{
+				display: inline-block;
+				a{
+					display: inline-block;
+					height: 24px;
+					width: 24px;
+					line-height: 26px;
+					text-align: center;
+					color: #000000;
+					@extend .regular;
+					text-decoration: none;
+
+					&.active{
+						color: #ffffff;
+						background: #f00000;
+					}
+				}
+			}
+		}
+
+		.color-head{
+			text-transform: uppercase;
+			@extend .bold;
+			@include font-size(12);
+			color: #1a1919;
+			display: block;
+			padding-bottom: 10px;
+		}
+
+		.color-slide{
+			position: relative;
+
+			.flex-viewport {
+				width: 180px;
+				margin-left: 30px;
+				position: relative;
+				z-index: 2;
+
+				li{
+
+					img{
+						display: block;
+						height: 49px;
+						width: 49px;
+					}
+
+					a{
+						display: block;
+						border: 1px solid #ffffff;
+						width: 51px;
+
+						&:hover, &.active{
+							border-color: #f00000;
+						}
+
+					}
+				}
+			}
+
+			.flex-direction-nav{
+				width: 215px;
+				position: absolute;
+				left: 7px;
+				top: 13px;
+				height: 28px;
+				z-index: 1;
+
+
+				li{
+					position: relative;
+					width: 50%;
+					display: block;
+					float: left;
+					height: 28px;
+
+					a{
+						position: absolute;
+						top: 0;
+						display: block;
+						text-indent: -9999px;
+
+						&.flex-prev{
+							left: 0;
+						}
+
+						&.flex-next{
+							right: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.tabs-part{
+	border: 1px solid #ededed;
+
+	.tabs-link{
+		@include clearfix();
+		background: #ededed;
+		
+
+		a{
+			display: block;
+			float: left;
+			width: 25%;
+			border-right: 2px solid #ffffff;
+			height: 59px;
+			line-height: 60px;
+			border-bottom: 1px solid #ededed;
+			text:{
+				decoration: none;
+				align: center;
+				transform: uppercase;
+			}
+
+			color: #212121;
+			@include font-size(12);
+			@extend .regular;
+
+
+			&.active{
+				color: #ffffff;
+				background: #f00000;
+				border-bottom-color: #f00000;
+				@extend .bold;
+				position: relative;
+
+				&:after{
+					@include triangle(down, #f00000, 6px);
+					left: 50%;
+					top: 100%;
+					position: absolute;
+				}
+			}
+
+			&:last-child{
+				border-right: 0;
+			}
+		}
+	}
+
+	.tabs-content{
+		padding: 30px;
+
+		.tab-block{
+			@include clearfix();
+			display: none;
+
+			&.active{
+				display: block;
+			}
+		}
+
+		.small-block{
+			width: 310px;
+			border-right: 2px dotted #eeeeee;
+			float: left;
+			padding-right: 30px;
+		}
+
+		.large-block{
+			margin-left: -2px;
+			border-left: 2px dotted #eeeeee;
+			width: 610px;
+			float: left;
+			padding-left: 30px;
+			@include line-height(21);
+		}
+
+		
+
+		.more-questions{
+			text-align: center;
+			text-transform: uppercase;
+			color: #212121;
+			@extend .bold;
+		}
+	}
+}
+
+.about-list{
+	@extend .regular;
+	@include line-height(24);
+	padding-bottom: 10px;
+
+	b{
+		text-transform: uppercase;
+		padding-right: 1px;
+	}
+}
+
+p.note{
+	color: #959595;
+	@extend .regular;
+	padding-left: 12px;
+	position: relative;
+	@include line-height(12);
+
+	span{
+		position: absolute;
+		left: 0;
+		top: 0;
+		color: #f00000;
+	}
+}
+
+.question-part{
+
+	.head{
+		border-bottom: 2px dotted #eeeeee;
+		@include clearfix();
+		padding-bottom: 5px;
+		margin-bottom: 15px;
+
+		.name{
+			color: #979797;
+			@extend .regular;
+			@include font-size(14);
+			@include line-height(10);
+			float: left;
+		}
+
+		.time{
+			@include font-size(10);
+			color: #b3b3b3;
+			@include line-height(10);
+			//padding-right: 25px;
+			float: right;
+		}
+	}
+
+	.text-block{
+		color: #000000;
+		@extend .regular;
+		margin-bottom: 60px;
+
+		.question{
+			padding-bottom: 15px;
+			@include font-size(12);
+			@include line-height(21);
+		}
+
+		.answer{
+			background: #f2f2f2;
+			padding: 25px 30px 20px;
+			position: relative;
+
+			&:before{
+				display: block;
+				content: "";
+				position: absolute;
+				left: 0;
+				top: -14px;
+			}
+		}
+	}
+}

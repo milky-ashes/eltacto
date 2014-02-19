@@ -1,0 +1,88 @@
+footer#footer{
+	background: #f2f2f2;
+	position: relative;
+	margin-top: 70px;
+	padding-top: 30px;
+	@include line-height(12);
+
+	&:before{
+		display: block;
+		width: 100%;
+		height: 11px;
+		position: absolute;
+		top: -11px;
+		left: 0;
+		background: url(../img/triangle-grey.png) 0 0 transparent repeat-x;
+		content: "";
+	}
+
+	a{
+		color: #262626;
+		text-decoration: none;
+		@include font-size(12);
+		
+
+		&:hover{
+			color: #8b8b8b;
+		}
+	}
+
+	.top-footer{
+		border-bottom: 2px dotted #d3d0cc;
+		padding-bottom: 20px;
+		@include clearfix();
+	}
+
+	.foot-menu-block{
+		float: left;
+		width: 250px;
+
+		span{
+			text-transform: uppercase;
+			@extend .bold;
+			display: block;
+			margin-bottom: 10px;
+		}
+
+		li{
+			display: block;
+			padding-bottom: 10px;
+		}
+	}
+
+	.subscribe-block{
+		float: left;
+		width: 220px;
+		padding-top: 40px;
+
+		.subsribe-link{
+			display: block;
+			height: 32px;
+			line-height: 32px;
+			border: 2px solid #8b8b8b;
+			@extend .black;
+			color: #8b8b8b;
+			@include font-size(11);
+			text-decoration: none;
+			text-transform: uppercase;
+			text-align: center;
+		}
+	}
+
+	.social-block{
+		float: right;
+		padding-top: 40px;
+
+		a{
+			display: block;
+			float: left;
+			margin-left: 9px;
+		}
+	}
+
+	.bottom-footer{
+		height: 46px;
+		line-height: 46px;
+		text-transform: uppercase;
+	}
+}

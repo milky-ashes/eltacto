@@ -1,0 +1,50 @@
+header#header{
+	height: 30px;
+	background: #f00000;
+	@include font-size(10);
+	padding-top: 5px;
+	margin-bottom: 30px;
+
+	a{
+		color: #ffffff;
+	}
+
+	.left-block{
+		a{
+			padding: 0 15px;
+			display: inline-block;
+			height: 18px;
+			line-height: 18px;
+			border-left: 1px dotted #ac0707;
+
+			&:last-child{
+				border-right: 1px dotted #ac0707;
+			}
+		}
+	}
+
+	.right-block{
+		a{
+			padding: 0 15px 0 30px;
+			display: inline-block;
+			position: relative;
+			height: 18px;
+			line-height: 18px;
+			border-left: 1px dotted #ac0707;
+
+			&:last-child{
+				border-right: 1px dotted #ac0707;
+			}
+
+			&:before{
+				display: block;
+				content: "";
+				position: absolute;
+				left: 15px;
+				top: 2px;
+			}
+
+		}
+
+	}
+}

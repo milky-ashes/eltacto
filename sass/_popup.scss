@@ -1,0 +1,176 @@
+.popup{
+	display: block;
+	position: fixed;
+	top: 150px;
+	left: 50%;
+	background: #ffffff;
+	@include border-radius(3px);
+	z-index: 2050;
+	display: none;
+
+	&.size{
+		width: 894px;
+		margin-left: -457px;
+	}
+
+	&.added{
+		width: 418px;
+		margin-left: -209px;
+	}
+
+	&.delivery{
+		width: 664px;
+		margin-left: -307px;
+	}
+
+	.pop-head{
+		border-bottom: 2px solid #eeeeee;
+		padding: 30px 25px 25px;
+		position: relative;
+
+		h2{
+			text-transform: uppercase;
+			@include font-size(18);
+		}
+
+		.close{
+			position: absolute;
+			top: 30px;
+			right: 30px;
+		}
+	}
+
+	.popup-body{
+		padding: 0 30px;
+
+		.size-table{
+			width: 100%;
+
+			tr{
+				border-bottom: 1px solid #eeeeee;
+
+				&:last-child{
+					border-bottom: 0;
+				}
+
+				td{
+					padding: 35px 0;
+					@include font-size(14);
+				}
+			}
+		}
+
+		.product-pop{
+			padding: 30px 0;
+
+			img{
+				display: block;
+				margin-bottom: 20px;
+			}
+
+			span{
+				display: block;
+
+				&.name{
+					color: #000000;
+					@extend .medium;
+					@include font-size(12);
+					@include line-height(14);
+					margin-bottom: 10px;
+					text-decoration: none;
+				}
+
+				&.price{
+					@extend .light;
+					color: #000000;
+					@include line-height(14);
+
+					&.old-price{
+						color: #b6b6b6;
+						text-decoration: line-through;
+					}
+
+					&.new-price{
+						color: #f00000;
+					}
+				}
+			}
+		}
+	}
+	.popup-footer{
+		border-top: 1px solid #ededed;
+		padding: 30px;
+		@include clearfix();
+		a{
+			float:right;
+			color: #000000;
+			text-transform: uppercase;
+			line-height: 35px;
+			@extend .bold;
+			@include font-size(12);
+
+			&.button{
+				float: left;
+				width: 158px;
+				color: #ffffff;
+				text-align: center;
+				padding: 0;
+				height: 35px;
+				line-height: 35px;
+			}
+		}
+	}
+
+	&.product{
+		width: 1040px;
+		margin-left: -520px;
+		background: #fafafa;
+		height: 598px;
+		top: 50%;
+		margin-top: -299px;
+
+		.pop-head{
+			border-bottom: 0;
+
+			a{
+				@include font-size(10);
+				color: #000000;
+			}
+			h2{
+				display: inline-block;
+				margin-right: 10px;
+				margin-bottom: -5px;
+			}
+		}
+
+		.personal-gallery{
+			margin-bottom: 30px;
+		}
+	}
+}
+
+.text-pop{
+	padding: 30px;
+	min-height: 375px;
+	@extend .regular;
+	@include line-height(20);
+
+	p{
+		margin-bottom: 15px;
+	}
+
+	ul{
+		margin-top: -15px;
+	}
+}
+
+#fade{
+	z-index: 2000;
+	background: #000;
+	@include opacity(.8);
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
