@@ -11,6 +11,14 @@ $icon-layout: smart;
 	@include icon-sprite(key-w);
 }
 
+.exit-link:before{
+	@include icon-sprite(exit);
+}
+
+.man-link:before{
+	@include icon-sprite(man);
+}
+
 .like-link:before{
 	@include icon-sprite(heart-w);
 }

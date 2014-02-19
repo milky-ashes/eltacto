@@ -3,15 +3,17 @@ jQuery(document).ready(function(){
 	//big bunner on inpex page
 
 	$('.js-slider').flexslider({
-		directionNav: false
+		directionNav: false,
+    	useCSS: false
 	});
 
 	 $('.js-thumb').flexslider({
 	    animation: "slide",
 	    animationLoop: false,
-	    itemWidth: 200,
-	    itemMargin: 0,
-	    controlNav: false
+	    itemWidth: 202,
+	    itemMargin: 0, 
+	    controlNav: false,
+    	useCSS: false
 	  });
 
 	 $('.js-color-slide').flexslider({
@@ -19,7 +21,8 @@ jQuery(document).ready(function(){
 	    animationLoop: false,
 	    itemWidth: 60,
 	    itemMargin: 0,
-	    controlNav: false
+	    controlNav: false,
+    	useCSS: false
 	  });
 
 	 //for search in focus
@@ -45,11 +48,11 @@ jQuery(document).ready(function(){
 
 	//for hide or show basket menu
 	$('.js-w-submenu').each(function(){
-	 	$(this).mouseenter(function(){
-	 		$(this).closest('li').addClass('active');
+	 	$(this).closest('li').mouseenter(function(){
+	 		$(this).addClass('active');
 	 	});
-	 	$(this).mouseleave(function(){
-	 		$(this).closest('li').removeClass('active');
+	 	$(this).closest('li').mouseleave(function(){
+	 		$(this).removeClass('active');
 	 	});
 	});
 
@@ -86,12 +89,13 @@ jQuery(document).ready(function(){
 	    controlNav: false,
 	    animationLoop: false,
 	    slideshow: false,
-	    itemWidth: 89,
-	    //itemMargin: 5,
+	    itemWidth: 99,
+	    itemMargin: 0,
 	    direction: "vertical",
 	    asNavFor: '#slider',
-	    minItems: 1,   
-    	maxItems: 5 
+	    minItems: 5,   
+    	maxItems: 5,
+    	useCSS: false
 	  });
 	   
 	  $('#slider').flexslider({
@@ -100,7 +104,8 @@ jQuery(document).ready(function(){
 	    directionNav: false,
 	    animationLoop: false,
 	    slideshow: false,
-	    sync: "#carousel"
+	    sync: "#carousel",
+    	useCSS: false
 	  });
 
 	//for tabs

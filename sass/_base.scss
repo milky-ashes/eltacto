@@ -465,6 +465,24 @@ nav#navigation{
 .thumb{
 	position: relative;
 
+	&:before{
+		display: block;
+		width: 30px;
+		height: 100%;
+		position: absolute;
+		right: -30px;
+		top: 0;
+		background: #fafafa;
+		content: "";
+		z-index: 5;
+	}
+
+	.flex-viewport{
+		width: 1010px;
+		z-index: 1;
+	}
+
+
 	.flex-direction-nav{
 		position: absolute;
 		height: 80px;
@@ -472,6 +490,7 @@ nav#navigation{
 		width: 100%;
 		margin-top: - 40px;
 		pointer-events: none;
+		z-index: 6;
 
 		li{
 			display: block;
@@ -702,10 +721,11 @@ nav#navigation{
 }
 
 .sert-list{
+	width: 1030px;
 	li{
 		display: block;
 		float: left;
-		width: 245px; 
+		width: 253px; 
 		margin-bottom: 40px;
 
 		a{
